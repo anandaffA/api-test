@@ -9,7 +9,7 @@ installation guide:
 No database, only using an array of objects.
 
 -- GET : /cimol
-- View all available products with the following queries available:
+View all available products with the following queries available:
 - product_name (string)
 - product_code (string)
 - min_qty (int)
@@ -17,7 +17,7 @@ No database, only using an array of objects.
 - warehouse_loc (string)
 
 -- GET : /cimol/{product_code}
-- View a specific product using 'product_code' in the header url.
+View a specific product using 'product_code' in the header url.
 
 -- POST : /cimol/add
 -- Request Body:{
@@ -27,13 +27,13 @@ No database, only using an array of objects.
     "expired_date": "2025-06-01",
     "warehouse_loc": "Japan"
 }
-- Add a product, product_code cannot be the same and request will be rejected and return an error.
+Add a product, product_code cannot be the same and request will be rejected and return an error.
   
 -- PUT : /cimol/edit
 -- Request Body: same as add
-- Edit a product, if the back-end couldn't find a product with the corresponding product_code, it will return an error.
+Edit a product, if the back-end couldn't find a product with the corresponding product_code, it will return an error.
 
 -- DELETE /cimol/{product_code}/delete
-- Delete a specific product using 'product_code' in the header url.
+Delete a specific product using 'product_code' in the header url.
 
 - Anandaffa Apriadi (2025)
